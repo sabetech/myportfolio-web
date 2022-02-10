@@ -19,6 +19,8 @@
   color: #172b4d;
   text-align: center;
   font-weight: 700;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .headline .sub-headline {
@@ -51,12 +53,16 @@
 .topnav {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .welcome {
   font-family: "Inter";
-  font-size: 1.2em;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   color: #28352f;
+  text-align: center;
 }
