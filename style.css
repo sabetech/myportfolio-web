@@ -9,8 +9,12 @@
   border: 1px solid #dfe1e6;
 }
 
-.button-style :hover{
-    
+.button-style :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-style :enabled {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .container {
@@ -55,6 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 
 .social-media-icons .icon {
@@ -78,3 +83,4 @@
   color: #28352f;
   text-align: center;
 }
+
