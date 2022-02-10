@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.button-style {
+  align-self: center;
+  border-radius: 32px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #dfe1e6;
+}
+
+.button-style :hover{
+    
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,7 +21,7 @@
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
 }
 
 .headline {
