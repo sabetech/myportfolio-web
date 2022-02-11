@@ -5,6 +5,18 @@
   margin-bottom: 0;
 }
 
+.center-content::after {
+  content: url("images/org-top.svg");
+  position: absolute;
+  right: 0;
+}
+
+.get-my-resume-btn::before {
+  content: url("images/org-bottom.svg");
+  position: absolute;
+  left: 0;
+}
+
 .about-me-categories {
   margin-top: 59px;
   margin-left: 24px;
@@ -27,6 +39,14 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.about-me-background {
+  background-image: url("/images/org-top.svg"), url("/images/org-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
 }
 
 /* .about-me-tags > * {
@@ -144,6 +164,17 @@
   padding: 12px;
   align-self: center;
   border: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.get-my-resume-btn {
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px;
+  align-self: center;
+  border: 0;
   margin: 15px;
 }
 
@@ -189,6 +220,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  list-style: none;
+  padding: 0;
 }
 
 .tech-item {
