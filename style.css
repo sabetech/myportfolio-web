@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 .about-me {
   margin-top: 68px;
   margin-bottom: 0;
@@ -20,7 +27,7 @@
 .footer-icons::before {
   content: url("images/contact-us-side-img.svg");
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 
 .about-me-categories {
