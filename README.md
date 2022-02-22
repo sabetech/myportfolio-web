@@ -9,10 +9,6 @@
 - HTML/CSS
 - Linters (stylelint and hint)
 
-## Live Demo (if available)
-
-[Live Demo Link](https://sabetech.github.io/portfolio)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -31,11 +27,11 @@ Run the html file in your web browser to see the result of this code
 
 ## Authors
 
-👤 **Author1**
+👤 **Albert Mensah-Ansah**
 
-- GitHub: [@githubhandle](https://github.com/sabetech)
-- Twitter: [@twitterhandle](https://twitter.com/al_kfx)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/albertkma)
+- GitHub: [@sabetech](https://github.com/sabetech)
+- Twitter: [@al_kfx](https://twitter.com/al_kfx)
+- LinkedIn: [Albert Mensah-Ansah](https://linkedin.com/in/albertkma)
 
 ## 🤝 Contributing
 
