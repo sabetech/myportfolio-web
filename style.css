@@ -112,7 +112,7 @@ a:active {
   flex-direction: column;
 }
 
-.contact-us-footer {
+.footer-contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +181,22 @@ a:active {
   margin-top: 62px;
 }
 
+.grid-item {
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+}
+
+.grid-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 222px;
+  margin-top: 252px;
+}
 
 .headline {
   font-family: Inter, sans-serif;
