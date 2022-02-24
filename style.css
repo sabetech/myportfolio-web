@@ -98,11 +98,7 @@ a:active {
   margin: 0 24px 200px 24px;
 }
 
-.contact-us-desktop-form {
-  display: none;
-}
-
-.contact-us-mobile-form {
+.contact-us-form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -118,13 +114,21 @@ a:active {
   font-size: 15px;
   padding: 15px 16px 15px 16px;
   line-height: 24px;
-  width: 50%;
+  width: 100%;
   margin-bottom: 24px;
-  float: left;
 }
 
-.contact-us-input .email {
+.contact-us-email {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  padding: 15px 16px 15px 16px;
+  line-height: 24px;
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .contact-us-text {
@@ -196,6 +200,10 @@ a:active {
   border-radius: 8px;
   height: 222px;
   margin-top: 252px;
+}
+
+.get-in-touch {
+  align-self: flex-start;
 }
 
 .headline {
@@ -379,14 +387,6 @@ a:active {
     margin-right: 10%;
   }
 
-  .contact-us-desktop-form {
-    display: block;
-  }
-
-  .contact-us-mobile-form {
-    display: none;
-  }
-
   .contact-us-text {
     color: #172b4d;
     font-family: "Inter", sans-serif;
@@ -394,7 +394,8 @@ a:active {
     font-size: 30px;
     line-height: 52px;
     text-align: center;
-    flex: 2, 0;
+    width: 80%;
+    margin-right: 24px;
   }
 
   .footer-contact-us {
