@@ -241,6 +241,11 @@ a:active {
 
 .icon {
   width: 100%;
+  transition: transform 0.5s;
+}
+
+.icon:hover {
+  transform: scale(1.5);
 }
 
 .inner-container {
@@ -263,6 +268,8 @@ a:active {
 }
 
 .see-project-btn {
+  font-size: 12px;
+  height: 38px;
   background-color: #36b37f;
   border-radius: 4px;
   color: #fff;
@@ -271,10 +278,13 @@ a:active {
   border: 0;
   margin-top: 5px;
   margin-bottom: 15px;
+  transition: font-size 1s, background-color 1s, height 1s;
 }
 
-.see-project-btn :hover {
-  background-color: #36b37f;
+.see-project-btn:hover {
+  background-color: darkgreen;
+  font-size: 20px;
+  height: 42px;
 }
 
 .see-project-btn:focus {
@@ -289,7 +299,7 @@ a:active {
   align-self: center;
   border: 0;
   margin: 15px;
-}
+  }
 
 .supporting-text {
   font-family: Inter, sans-serif;
