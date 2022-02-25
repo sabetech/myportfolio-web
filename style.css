@@ -396,6 +396,16 @@ a:active {
     margin-right: 10%;
   }
 
+  .button-style {
+    align-self: center;
+    border-radius: 32px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #dfe1e6;
+    margin-top: 10%;
+  }
+
   .container {
     background-image: url("./images/Header-llustration-desktop.svg");
     background-position: center;
@@ -436,10 +446,6 @@ a:active {
     margin-right: 24px;
   }
 
-  .desktop-hr {
-    display: block;
-  }
-
   .contact-us-text::after {
     content: url("images/illustration-1-contact-form-desktop.svg");
     position: absolute;
@@ -453,8 +459,14 @@ a:active {
     margin-top: 400px;
   }
 
+  .desktop-hr {
+    display: block;
+  }
+
   .footer-contents {
     display: block;
+    align-items: center;
+    margin: 0 24px 30px 24px;
   }
 
   .footer-contact-us {
@@ -495,6 +507,19 @@ a:active {
     margin-top: 52px;
   }
 
+  .headline {
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    color: #172b4d;
+    text-align: center;
+    font-weight: 700;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 20%;
+    margin-bottom: 0;
+  }
+
   .inner-about-me::after {
     content: url("images/Frame.png");
     position: absolute;
@@ -502,6 +527,9 @@ a:active {
   }
 
   .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0 20% 0 20%;
   }
 
