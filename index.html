@@ -12,47 +12,56 @@
     </head>
     <body>
         <header>
-            <nav class="topnav">
+            <nav class="topnav-mobile">
                 <a href="index.html" class="welcome">Welcome</a>
                 <div>
                     <i class="fa fa-bars hamburgar"></i>
                 </div>
             </nav>
+            <nav class="topnav-desktop">
+                <ul class="menu-desktop">
+                    <li>Portfolio</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </header>
 
         <section class="container">
-            <h1 class="headline">
-                Hey There. I'm Albert <br />
-                <span class="sub-headline">
-                    I'm a Software Developer
-                </span>
-            </h1>
-            <p class="supporting-text">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.
-            </p>
-
-            <ul class="social-media-icons" >
-                <li class="social-icon">
-                    <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://linkedin.com"><img src="images/Linkedin_icon.svg" alt="LinkedIn"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://medium.com"><img src="images/medium.svg" alt="Medium"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://github.com"><img src="images/github.svg" alt="github"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://angellist.com"><img src="images/angellist.svg" alt="angellist"></a>
-                </li>
-            </ul>
-          
-            <button type="button" class="button-style">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </button>
+            <div class="inner-container">
+                <h1 class="headline">
+                    Hey There. I'm Albert <br />
+                    <span class="sub-headline">
+                        I'm a Software Developer
+                    </span>
+                </h1>
+                <p class="supporting-text">
+                    I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.
+                </p>
+                
+                <ul class="social-media-icons" >
+                    <li class="social-icon">
+                        <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://linkedin.com"><img src="images/Linkedin_icon.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://medium.com"><img src="images/medium.svg" alt="Medium"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://github.com"><img src="images/github.svg" alt="github"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://angellist.com"><img src="images/angellist.svg" alt="angellist"></a>
+                    </li>
+                </ul>
+            
+                <button type="button" class="button-style">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+            </div>
         </section>
 
         <section class="recent-works-container">
@@ -192,17 +201,17 @@
             </div>
         </section>
 
-        <section class="center-content">
-            
-            <h2 class="headline about-me">About me</h2>
-            
-            <p class="supporting-text">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.
-            </p>
-            <button type="button" class="get-my-resume-btn">
-                Get My Resume
-            </button>
+        <section class="about-me-section">
+            <div class="inner-about-me">
+                <h2 class="headline about-me">About me</h2>
+                <p class="supporting-text about-me-text">
+                    I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.
+                </p>
+                <button type="button" class="get-my-resume-btn">
+                    Get My Resume
+                </button>
+            </div>
         
             <ul class="about-me-categories">
                 <li class="about-me-card">
@@ -243,38 +252,45 @@
         </section>
         
         <footer class="footer-contact-us">
-            <p class="contact-us-text">
-                I'm always interested in hearing about 
-                new projects, so if you'd like to chat 
-                please get in touch.
-            </p>
+           <div class="contact-us-content">
+                <p class="contact-us-text">
+                    I'm always interested in hearing about 
+                    new projects, so if you'd like to chat 
+                    please get in touch.
+                </p>
 
-            <form class="contact-us-form" action="https://formspree.io/f/xknyrjzn" method="POST">
-                <input name="full_name" class="contact-us-input" type="text" placeholder="Full name" maxlength="30" required/>
-                <input name="email" class="contact-us-input" type="email" placeholder="Email" maxlength="30" required/>
-                <textarea name="message" class="contact-us-textarea" placeholder="Enter Text here" maxlength="500" required></textarea>
-                <button type="submit" class="see-project-btn">Get in touch</button>
-            </form>
+                <form class="contact-us-form" action="https://formspree.io/f/xknyrjzn" method="POST">
+                    <input name="full_name" class="contact-us-input" type="text" placeholder="Full name" maxlength="30" required/>
+                    <input name="email" class="contact-us-input" type="email" placeholder="Email" maxlength="30" required/>
+                    <textarea name="message" class="contact-us-textarea" placeholder="Enter Text here" maxlength="500" required></textarea>
+                    <button type="submit" class="get-in-touch">Get in touch</button>
+                </form>
+            </div>
+            
+            <div class="footer-contents">
+                <hr class="desktop-hr"/>
+                <ul class="footer-icons social-media-icons" >
+                    <li class="social-icon">
+                        <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://linkedin.com"><img src="images/Linkedin_icon.svg" alt="LinkedIn"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://medium.com"><img src="images/medium.svg" alt="Medium"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://github.com"><img src="images/github.svg" alt="github"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="https://angellist.com"><img src="images/angellist.svg" alt="angellist"></a>
+                    </li>
+                </ul>
 
-            <ul class="footer-icons social-media-icons" >
-                <li class="social-icon">
-                    <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://linkedin.com"><img src="images/Linkedin_icon.svg" alt="LinkedIn"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://medium.com"><img src="images/medium.svg" alt="Medium"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://github.com"><img src="images/github.svg" alt="github"></a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://angellist.com"><img src="images/angellist.svg" alt="angellist"></a>
-                </li>
-            </ul>
-
-            <h4><a class="footer-email" href="mailto:albert.mensahansah@gmail.com">albert.mensahansah@gmail.com</a></h4>
+                <h4>
+                    <a class="footer-email" href="mailto:albert.mensahansah@gmail.com">albert.mensahansah@gmail.com</a>
+                </h4>
+            </div>
 
         </footer>
     </body>
