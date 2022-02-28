@@ -9,6 +9,10 @@
 - HTML/CSS
 - Linters (stylelint and hint)
 
+## Live Demo
+
+[Live Link](https://sabetech.github.io/myportfolio-web/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -46,5 +50,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Thanks all my buddies who are supporting me in this program
+- Thanks all the microverse resources that helped in this project
 - etc
