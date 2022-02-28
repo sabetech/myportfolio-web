@@ -25,10 +25,6 @@ Clone the project from this repo and run npm install
 
 Run the html file in your web browser to see the result of this code
 
-## Live Demo
-
-[Live Link](https://sabetech.github.io/myportfolio-web/)
-
 ## Authors
 
 👤 **Albert Mensah-Ansah**
