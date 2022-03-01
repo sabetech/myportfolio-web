@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --greenThemeText: rgb(31, 112, 77);
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -236,7 +240,7 @@ a:active {
 }
 
 .headline .sub-headline {
-  color: #36b37e;
+  color: var(--greenThemeText);
 }
 
 .icon {
@@ -270,7 +274,7 @@ a:active {
 .see-project-btn {
   font-size: 12px;
   height: 38px;
-  background-color: #36b37f;
+  background-color: var(--greenThemeText);
   border-radius: 4px;
   color: #fff;
   padding: 12px;
@@ -278,13 +282,13 @@ a:active {
   border: 0;
   margin-top: 5px;
   margin-bottom: 15px;
-  transition: font-size 1s, background-color 1s, height 1s;
+  transition: font-size 0.2s, background-color 0.2s;
 }
 
 .see-project-btn:hover {
   background-color: darkgreen;
-  font-size: 20px;
-  height: 42px;
+  font-size: 15px;
+  height: 40px;
 }
 
 .see-project-btn:focus {
@@ -292,7 +296,7 @@ a:active {
 }
 
 .get-my-resume-btn {
-  background-color: #36b37f;
+  background-color: var(--greenThemeText);
   border-radius: 4px;
   color: #fff;
   padding: 12px;
@@ -343,7 +347,7 @@ a:active {
   line-height: 16px;
   letter-spacing: 0.03em;
   font-weight: 600;
-  color: #36b37e;
+  color: var(--greenThemeText);
   padding: 12px;
   margin: 4px;
 }
@@ -508,7 +512,7 @@ a:active {
   }
 
   .get-in-touch {
-    background-color: #36b37f;
+    background-color: var(--greenThemeText);
     border-radius: 4px;
     color: #fff;
     padding: 12px;

@@ -37,6 +37,16 @@ Run the html file in your web browser to see the result of this code
 - Twitter: [@al_kfx](https://twitter.com/al_kfx)
 - LinkedIn: [Albert Mensah-Ansah](https://linkedin.com/in/albertkma)
 
+## Collaborators
+
+**Taheny BELGUITH**
+
+- GitHub: [@TahenyBELGUITH](https://github.com/TahenyBELGUITH)
+
+**Onwuanibe Onomeh**
+
+- GitHub: [@Estherstarr](https://github.com/Estherstarr)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
