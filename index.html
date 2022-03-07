@@ -11,11 +11,11 @@
         <title>My Portfolio</title>
     </head>
     <body>
-        <header>
+        <header style="display:none">
             <nav class="topnav-mobile">
                 <a href="index.html" class="welcome">Welcome</a>
                 <div>
-                    <i class="fa fa-bars hamburgar"></i>
+                    <i id="side-menu-button" class="fa fa-bars hamburgar"></i>
                 </div>
             </nav>
             <nav class="topnav-desktop">
@@ -27,7 +27,18 @@
             </nav>
         </header>
 
-        <section class="container">
+        <div id="mobile-menu-modal" >
+            <i class="fa fa-times close-modal" aria-hidden="true"></i>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item">Portfolio</li>
+                <li class="mobile-menu-list-item">About</li>
+                <li class="mobile-menu-list-item">Contact</li>
+            </ul>
+
+        </div>
+
+        <div style="display:none">
+        <section class="container" >
             <div class="inner-container">
                 <h1 class="headline">
                     Hey There. I'm Albert <br />
@@ -293,5 +304,7 @@
             </div>
 
         </footer>
+        </div>
+        <script src="portforlio.js"></script>
     </body>
 </html>

@@ -228,6 +228,16 @@ a:active {
   margin-bottom: 15px;
 }
 
+.get-my-resume-btn {
+  background-color: var(--greenThemeText);
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px;
+  align-self: center;
+  border: 0;
+  margin: 15px;
+}
+
 .headline {
   font-family: Inter, sans-serif;
   font-size: 40px;
@@ -271,6 +281,30 @@ a:active {
   width: 18%;
 }
 
+#mobile-menu-modal {
+  position: fixed;
+  height: 100%;
+  width: 80%;
+  margin: 28px;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu-list-item {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  padding: 20px 0px 20px 0;
+  color: #3a4a42;
+}
+
 .see-project-btn {
   font-size: 12px;
   height: 38px;
@@ -295,16 +329,11 @@ a:active {
   background-color: #008552;
 }
 
-.get-my-resume-btn {
-  background-color: var(--greenThemeText);
-  border-radius: 4px;
-  color: #fff;
-  padding: 12px;
-  align-self: center;
-  border: 0;
-  margin: 15px;
+.close-modal {
+  float: right;
+  color: #67798e;
+  font-size: x-large;
 }
-
 .supporting-text {
   font-family: Inter, sans-serif;
   font-style: normal;
