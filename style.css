@@ -274,6 +274,18 @@ a:active {
   flex-direction: column;
 }
 
+.is-visible {
+  display: block;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
 .line {
   height: 4px;
   border-width: 0;
