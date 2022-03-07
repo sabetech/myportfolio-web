@@ -1,11 +1,10 @@
 const sideMenuButton = document.getElementById('side-menu-button');
 const sideMenuModal = document.getElementById('mobile-menu-modal');
 const mainPage = document.getElementById('main-page-content');
-const closemodal = document.querySelector('.close-modal')
+const closemodal = document.querySelector('.close-modal');
 const menuItems = document.querySelectorAll('.mobile-menu-list-item');
 
 let isVisible = false;
-
 
 function toggleModalVisibility() {
   isVisible = !isVisible;
@@ -16,10 +15,9 @@ function toggleModalVisibility() {
 sideMenuButton.addEventListener('click', () => {
   toggleModalVisibility();
 });
-closemodal.addEventListener('click', () =>{
+closemodal.addEventListener('click', () => {
   toggleModalVisibility();
 });
-
 
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', (ev) => {

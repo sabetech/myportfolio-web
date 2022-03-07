@@ -313,7 +313,7 @@ a:active {
   font-weight: 600;
   font-size: 32px;
   line-height: 42px;
-  padding: 20px 0px 20px 0;
+  padding: 20px 0 20px 0;
   color: #3a4a42;
 }
 
@@ -346,6 +346,7 @@ a:active {
   color: #67798e;
   font-size: x-large;
 }
+
 .supporting-text {
   font-family: Inter, sans-serif;
   font-style: normal;
