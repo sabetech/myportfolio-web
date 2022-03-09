@@ -4,6 +4,8 @@ window.onload = () => {
   const mainPage = document.getElementById('main-page-content');
   const closemodal = document.querySelector('.close-modal');
   const menuItems = document.querySelectorAll('.mobile-menu-list-item');
+  const detailsModal = document.getElementById('details-modal');
+  const closeDetails = document.getElementById('close-details');
 
   let isVisible = false;
 
@@ -18,6 +20,10 @@ window.onload = () => {
   });
   closemodal.addEventListener('click', () => {
     toggleModalVisibility();
+  });
+
+  closeDetails.addEventListener('click', () => {
+    detailsModal.classList.add('hidden');
   });
 
   menuItems.forEach((menuItem) => {
@@ -85,6 +91,10 @@ window.onload = () => {
     clonedNode.children[0].children[0].innerText = project.name;
     const techList = document.createElement('ul');
     techList.classList.add('tech-list');
+    const showProjectButton = document.createElement('button');
+    showProjectButton.type = 'button';
+    showProjectButton.textContent = 'See Project';
+    showProjectButton.classList.add('see-project-btn');
 
     project.technologies.forEach((tech) => {
       const listItem = document.createElement('li');
@@ -94,6 +104,11 @@ window.onload = () => {
     });
 
     clonedNode.children[0].children[0].appendChild(techList);
+    clonedNode.children[0].children[0].appendChild(showProjectButton);
     grid.appendChild(clonedNode);
+
+    showProjectButton.addEventListener('click', () => {
+      
+    });
   });
 };

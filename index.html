@@ -22,22 +22,48 @@
             </ul>
         </div>
 
-        <div id="details-modal" style="display:none">
-            <div class="details-container" >
+        <div id="details-modal" class="hidden">
+            <div class="details-container">
                 <div class="details-content">
-
+                    <img id="close-details" class="close-modal" src="images/Enabled.png" alt="close-icon" >
                 </div>
-                <h3 class="details-heading">
-                    Keeping track of hundreds of components
-                </h3>
+                <div class="details-button-and-title">
+                    <h3 class="details-heading">
+                        
+                    </h3>
+                    <div class="buttons-desktop">
+                        <button class="detail-button">
+                            See Live <img class="button-img" src="./images/Icon - Export.png" />
+                        </button>
+                        <button class="detail-button">
+                            See Source <img class="button-img" src="./images/Icon -GitHub.png" />
+                        </button>
+                    </div>
+                </div>
+                <ul class="details">
+                    <li class="tag">Javascript</li>
+                    <li class="tag">Ruby</li>
+                    <li class="tag">Html</li>
+                    <li class="tag">CSS</li>
+                </ul>
+                <p class="detail-description">
+                 **description**
+                </p>
+                <div class="buttons-mobile">
+                    <button class="detail-button">
+                        See Live <img class="button-img" src="./images/Icon - Export.png" />
+                    </button>
+                    <button class="detail-button">
+                        See Source <img class="button-img" src="./images/Icon -GitHub.png" />
+                    </button>
+                </div>
             </div>
         </div>
+
         <div id='grid-template' style="display:none">
             <div class="grid-item" >
                 <div class="grid-item-info">
                     <h3 class="card-title">**title**</h3>
-                    
-                    <button type="button" class="see-project-btn">See Project</button>
                 </div>
             </div>
         </div>
@@ -58,9 +84,6 @@
                     </ul>
                 </nav>
             </header>
-
-            
-
             
             <section class="container" >
                 <div class="inner-container">
