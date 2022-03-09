@@ -109,6 +109,11 @@ window.onload = () => {
 
     showProjectButton.addEventListener('click', () => {
       
+      detailsModal.classList.remove('hidden');
+      const paragraghDescription = detailsModal.querySelector('p');
+      const detailsHeader = detailsModal.querySelector('h3.details-heading');
+      paragraghDescription.textContent = project.description;
+      detailsHeader.textContent = project.name;
     });
   });
-};
+}
