@@ -6,6 +6,7 @@ window.onload = () => {
   const menuItems = document.querySelectorAll('.mobile-menu-list-item');
   const detailsModal = document.getElementById('details-modal');
   const closeDetails = document.getElementById('close-details');
+  const closeDetailsDesktop = document.querySelector('.close-modal-desktop');
 
   let isVisible = false;
 
@@ -13,6 +14,12 @@ window.onload = () => {
     isVisible = !isVisible;
     sideMenuModal.classList.toggle('is-visible');
     mainPage.style.display = isVisible ? 'none' : 'block';
+  }
+
+  function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+    }
   }
 
   sideMenuButton.addEventListener('click', () => {
@@ -23,6 +30,9 @@ window.onload = () => {
   });
 
   closeDetails.addEventListener('click', () => {
+    detailsModal.classList.add('hidden');
+  });
+  closeDetailsDesktop.addEventListener('click', () => {
     detailsModal.classList.add('hidden');
   });
 
@@ -108,12 +118,30 @@ window.onload = () => {
     grid.appendChild(clonedNode);
 
     showProjectButton.addEventListener('click', () => {
-      
       detailsModal.classList.remove('hidden');
       const paragraghDescription = detailsModal.querySelector('p');
       const detailsHeader = detailsModal.querySelector('h3.details-heading');
+      const seeLiveBtn = detailsModal.querySelector('#see-live');
+      const seeSourceBtn = detailsModal.querySelector('#see-source');
+
+      seeLiveBtn.addEventListener('click', () => {
+        window.open(project.link_to_live, '_blank');
+      });
+
+      seeSourceBtn.addEventListener('click', () => {
+        window.location.href = project.link_to_source;
+      });
       paragraghDescription.textContent = project.description;
       detailsHeader.textContent = project.name;
+
+      const techListdetail = document.querySelector('.details');
+      removeAllChildNodes(techListdetail);
+      project.technologies.forEach((tech) => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('tag');
+        listItem.textContent = tech;
+        techListdetail.appendChild(listItem);
+      });
     });
   });
-}
+};

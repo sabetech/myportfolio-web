@@ -52,7 +52,6 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-
   list-style: none;
   padding: 0;
 }
@@ -103,6 +102,12 @@ a:active {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+}
+
+.close-modal-desktop {
+  display: none;
+  float: right;
+  cursor: pointer;
 }
 
 .container {
@@ -189,14 +194,13 @@ a:active {
   border: 0;
   margin-top: 5px;
   margin-bottom: 15px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -210,8 +214,8 @@ a:active {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
+  margin-top: 30px;
 }
 
 .details-heading {
@@ -220,7 +224,7 @@ a:active {
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -439,6 +443,7 @@ a:active {
   background-color: darkgreen;
   font-size: 15px;
   height: 40px;
+  cursor: pointer;
 }
 
 .see-project-btn:focus {
@@ -491,7 +496,7 @@ a:active {
 }
 
 .tag {
-  background-color: #fff;
+  background-color: #ebecf0;
   border-radius: 8px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -575,6 +580,8 @@ a:active {
   .buttons-desktop {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   .button-style {
@@ -590,6 +597,10 @@ a:active {
 
   .button-style:hover {
     transform: scale(1.5);
+  }
+
+  .close-modal {
+    display: none;
   }
 
   .container {
@@ -665,20 +676,22 @@ a:active {
   }
 
   .detail-button {
-    padding: 5px;
+    padding: 10px;
     margin-left: 5px;
-    width: 150px;
     height: 50px;
+    cursor: pointer;
   }
 
   .details-container {
-    /* max-height: calc(100vh); */
     width: 50%;
     overflow-y: auto;
   }
 
   .details-button-and-title {
     display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    margin-bottom: -30px;
   }
 
   .desktop-hr {
@@ -775,6 +788,14 @@ a:active {
 
   .inner-about-me {
     margin: 0 20% 0 20%;
+  }
+
+  .close-modal-desktop {
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
   }
 
   .buttons-mobile {

@@ -47,6 +47,10 @@ Run the html file in your web browser to see the result of this code
 
 - GitHub: [@Estherstarr](https://github.com/Estherstarr)
 
+**Ibrahim Naseer**
+
+- GitHub: [@Estherstarr](https://github.com/ibrahim777764)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
