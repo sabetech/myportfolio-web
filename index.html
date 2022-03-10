@@ -21,6 +21,45 @@
                 <li class="mobile-menu-list-item" data-location="contactus">Contact</li>
             </ul>
         </div>
+
+        <div id="details-modal" class="hidden">
+            <div class="details-container">
+                <button class="close-modal-desktop" type="button"><img src="./images/Icon-close-desktop.png" alt="close-icon" ></button>
+                <div class="details-content">
+                    <img id="close-details" class="close-modal" src="images/Enabled.png" alt="close-icon" >
+                </div>
+                <div class="details-button-and-title">
+                    <h3 class="details-heading"></h3>
+                    <div class="buttons-desktop">
+                        <button id="see-live" class="detail-button" type="button">
+                            See Live <img class="button-img" src="./images/Icon_Export.png" alt="see-live-icon"/>
+                        </button>
+                        <button id="see-source" class="detail-button" type="button">
+                            See Source <img class="button-img" src="./images/Icon_GitHub.png" alt="see-source-icon"/>
+                        </button>
+                    </div>
+                </div>
+                <ul class="details"></ul>
+                <p class="detail-description"></p>
+                <div class="buttons-mobile">
+                    <button id="see-live-mobile" class="detail-button" type="button">
+                        See Live <img class="button-img" src="./images/Icon_Export.png" alt="see-live-icon"/>
+                    </button>
+                    <button id="see-source-mobile" class="detail-button" type="button">
+                        See Source <img class="button-img" src="./images/Icon_GitHub.png" alt="see-source-icon"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id='grid-template' class="hidden">
+            <div class="grid-item" >
+                <div class="grid-item-info">
+                    <h3 class="card-title"></h3>
+                </div>
+            </div>
+        </div>
+
         <div id="main-page-content">
             <header >
                 <nav class="topnav-mobile">
@@ -37,9 +76,6 @@
                     </ul>
                 </nav>
             </header>
-
-            
-
             
             <section class="container" >
                 <div class="inner-container">
@@ -79,140 +115,7 @@
             </section>
 
             <section id="portfolio" class="recent-works-container">
-                <h2 class="headline">
-                    My Recent Works
-                </h2>
-
-                <hr class="line">
-
-                <div class="grid">
-                    
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="grid-item-info">
-                            <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
-                            <ul class="tech-list">
-                                <li class="tech-item">
-                                    Ruby on rails
-                                </li>
-                                <li class="tech-item">
-                                    css
-                                </li>
-                                <li class="tech-item">
-                                    JavScript
-                                </li>
-                                <li class="tech-item">
-                                    html
-                                </li>
-                            </ul>
-                            <button type="button" class="see-project-btn">See Project</button>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
 
             <section id="aboutme" class="about-me-section">
