@@ -123,14 +123,25 @@ window.onload = () => {
       const detailsHeader = detailsModal.querySelector('h3.details-heading');
       const seeLiveBtn = detailsModal.querySelector('#see-live');
       const seeSourceBtn = detailsModal.querySelector('#see-source');
+      const seeLiveMobileBtn = detailsModal.querySelector('#see-live-mobile');
+      const seeSourceMobileBtn = detailsModal.querySelector('#see-source-mobile');
+
+      seeLiveMobileBtn.addEventListener('click', () => {
+        window.open(project.link_to_live, '_blank');
+      });
 
       seeLiveBtn.addEventListener('click', () => {
         window.open(project.link_to_live, '_blank');
       });
 
+      seeSourceMobileBtn.addEventListener('click', () => {
+        window.location.href = project.link_to_source;
+      });
+
       seeSourceBtn.addEventListener('click', () => {
         window.location.href = project.link_to_source;
       });
+
       paragraghDescription.textContent = project.description;
       detailsHeader.textContent = project.name;
 
