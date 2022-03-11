@@ -188,4 +188,47 @@ window.onload = () => {
   window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   });
+
+  const contactUsForm = document.getElementById('contact-us-form');
+
+  function showMessage(input, message, type) {
+    const msg = document.querySelector('small');
+    msg.innerText = message;
+    msg.classList.add('success');
+    msg.classList.add('msg');
+    input.classList.add(type ? 'success' : 'error');
+    return type;
+  }
+
+  function showError(input, message) {
+    return showMessage(input, message, false);
+  }
+
+  function showSuccess(input) {
+    return showMessage(input, '', true);
+  }
+
+  function isLowerCase(input, message) {
+    if (input.value.trim().toLowerCase() !== input.value) {
+      return showError(input, message);
+    }
+    return showSuccess(input);
+  }
+
+  function validateEmail(input, message) {
+    if (!isLowerCase(input, message)) {
+      return false
+    }
+    return true;
+  }
+
+  contactUsForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const emailField = contactUsForm.elements.email;
+    const emailValid = validateEmail(emailField, 'Your Email is not lowercase');
+
+    if (emailValid) {
+      contactUsForm.submit();
+    }
+  });
 };
