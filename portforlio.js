@@ -261,7 +261,6 @@ window.onload = () => {
   };
 
   function saveFormObjectToLocalStorage(formObject) {
-    console.log(formObject);
     localStorage.setItem('formInput', JSON.stringify(formObject));
   }
 
@@ -271,7 +270,7 @@ window.onload = () => {
   }
 
   function setOnChangeHandlers() {
-    const inputElements = document.forms['contact-us-form'].getElementsByClassName('save-local'); 
+    const inputElements = document.forms['contact-us-form'].getElementsByClassName('save-local');
     for (let i = 0; i < inputElements.length; i += 1) {
       inputElements[i].addEventListener('change', (event) => {
         saveFormValuesInLocalStorage(event.target);
@@ -281,10 +280,6 @@ window.onload = () => {
 
   if (hasLocalStorage('localStorage')) {
     setOnChangeHandlers();
-    if (!localStorage.getItem('formInput')) {
-
-    }
-  } else {
-    // Too bad, no localStorage for us
+    
   }
 };
