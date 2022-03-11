@@ -277,6 +277,7 @@ window.onload = () => {
       });
     }
   }
+
   function prefillTextInputs(formObject) {
     const inputElements = document.forms['contact-us-form'].getElementsByClassName('save-local');
     for (let i = 0; i < inputElements.length; i += 1) {
@@ -285,7 +286,7 @@ window.onload = () => {
   }
   if (hasLocalStorage('localStorage')) {
     setOnChangeHandlers();
-    
+
     if (localStorage.getItem('formInput')) {
       const formEntries = localStorage.getItem('formInput');
       prefillTextInputs(JSON.parse(formEntries));
