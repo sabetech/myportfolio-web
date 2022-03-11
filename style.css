@@ -104,6 +104,17 @@ a:active {
   text-align: center;
 }
 
+.close-modal {
+  float: right;
+  color: #67798e;
+  font-size: x-large;
+}
+
+.close-detail {
+  float: right;
+  font-size: x-large;
+}
+
 .close-modal-desktop {
   display: none;
   float: right;
@@ -126,9 +137,10 @@ a:active {
 
 .contact-us-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 .contact-us-input {
@@ -260,6 +272,17 @@ a:active {
   height: 25%;
 }
 
+.error.msg {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  /* margin: 1%; */
+  /* margin-left: 20px; */
+}
+
+.error {
+  color: #ff6163;
+}
+
 .footer-email {
   color: #42526e;
   font-family: "Inter", sans-serif;
@@ -319,9 +342,9 @@ a:active {
 .get-in-touch {
   background-color: #36b37f;
   border-radius: 4px;
+  max-width: max-content;
   color: #fff;
   padding: 12px;
-  align-self: flex-start !important;
   border: 0;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -451,28 +474,6 @@ a:active {
 }
 .success {
   color: #36b37e;
-}
-
-.success.msg {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  margin: 11%;
-  margin-left: 20px;
-}
-
-.error {
-  color: #ff6163;
-}
-
-.close-modal {
-  float: right;
-  color: #67798e;
-  font-size: x-large;
-}
-
-.close-detail {
-  float: right;
-  font-size: x-large;
 }
 
 .supporting-text {
@@ -731,6 +732,12 @@ a:active {
     color: #172b4d;
   }
 
+  .error.msg {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+
   .footer-contents {
     display: block;
     align-items: center;
@@ -750,6 +757,7 @@ a:active {
   }
 
   .get-in-touch {
+    max-width: max-content;
     background-color: var(--greenThemeText);
     border-radius: 4px;
     color: #fff;

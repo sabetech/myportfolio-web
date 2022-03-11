@@ -194,7 +194,7 @@ window.onload = () => {
   function showMessage(input, message, type) {
     const msg = document.querySelector('small');
     msg.innerText = message;
-    msg.classList.add('success');
+    msg.classList.add('error');
     msg.classList.add('msg');
     input.classList.add(type ? 'success' : 'error');
     return type;
