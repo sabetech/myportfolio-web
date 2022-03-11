@@ -457,6 +457,7 @@ a:active {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   margin: 11%;
+  margin-left: 20px;
 }
 
 .error {
