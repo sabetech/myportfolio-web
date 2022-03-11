@@ -217,7 +217,7 @@ window.onload = () => {
 
   function validateEmail(input, message) {
     if (!isLowerCase(input, message)) {
-      return false
+      return false;
     }
     return true;
   }

@@ -275,8 +275,6 @@ a:active {
 .error.msg {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  /* margin: 1%; */
-  /* margin-left: 20px; */
 }
 
 .error {
@@ -472,6 +470,7 @@ a:active {
 .see-project-btn:focus {
   background-color: #008552;
 }
+
 .success {
   color: #36b37e;
 }
