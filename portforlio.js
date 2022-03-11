@@ -231,4 +231,65 @@ window.onload = () => {
       contactUsForm.submit();
     }
   });
+
+  function hasLocalStorage() {
+    let storage;
+    try {
+      storage = window.localStorage;
+      const x = '__storage_test__';
+      storage.setItem(x, x);
+      storage.removeItem(x);
+      return true;
+    } catch (e) {
+      return e instanceof DOMException && (
+        e.code === 22
+
+        || e.code === 1014
+
+        || e.name === 'QuotaExceededError'
+
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+
+        && (storage && storage.length !== 0);
+    }
+  }
+
+  const formData = {
+    full_name: '',
+    email: '',
+    message: '',
+  };
+
+  function saveFormObjectToLocalStorage(formObject) {
+    localStorage.setItem('formInput', JSON.stringify(formObject));
+  }
+
+  function saveFormValuesInLocalStorage(target) {
+    formData[target.name] = target.value;
+    saveFormObjectToLocalStorage(formData);
+  }
+
+  function setOnChangeHandlers() {
+    const inputElements = document.forms['contact-us-form'].getElementsByClassName('save-local');
+    for (let i = 0; i < inputElements.length; i += 1) {
+      inputElements[i].addEventListener('change', (event) => {
+        saveFormValuesInLocalStorage(event.target);
+      });
+    }
+  }
+
+  function prefillTextInputs(formObject) {
+    const inputElements = document.forms['contact-us-form'].getElementsByClassName('save-local');
+    for (let i = 0; i < inputElements.length; i += 1) {
+      inputElements[i].value = formObject[inputElements[i].name];
+    }
+  }
+  if (hasLocalStorage('localStorage')) {
+    setOnChangeHandlers();
+
+    if (localStorage.getItem('formInput')) {
+      const formEntries = localStorage.getItem('formInput');
+      prefillTextInputs(JSON.parse(formEntries));
+    }
+  }
 };
